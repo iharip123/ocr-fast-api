@@ -26,7 +26,6 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-          sudo apt-get install python-opencv
           pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
       
       - name: Install dependencies
