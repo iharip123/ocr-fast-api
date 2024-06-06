@@ -44,6 +44,7 @@ async def upload_image(image: UploadFile = File(...)):
 
     filename = "image.jpg"
     file_path = os.path.join(UPLOAD_FOLDER, filename)
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     try:
         with open(file_path, "wb") as buffer:
             buffer.write(await image.read())
