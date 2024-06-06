@@ -41,7 +41,7 @@ jobs:
       - name: Install PyTorch separately
         run: |
           source venv/bin/activate
-          pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+          pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
         
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
