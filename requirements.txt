@@ -1,3 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+torchaudio
+
 numpy==1.26.4
 opencv-python-headless==4.10.0.82
 pillow==10.3.0
